@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogen Admin Area</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <style>
+        @media (max-width: 576px) {
+          nav .container{
+            width: 100%;
+          }
+        
+        }
+    </style> 
+</head>
+<body>
+    <nav class = " navbar navbar-toggleable-sm navbar-inverse bg-inverse p-0">
+        <div class="container">
+            <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarNavs">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="index.html" class="navbar-brand mr-3">E-commerce</a>
+            <div class="collapse navbar-collapse" id="navbarNavs">
+                <ul class="navbar-nav">
+                    <li class="nav-item px-2"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item px-2"><a href="about.html" class="nav-link active">About</a></li>
+                    <li class="nav-item px-2"><a href="services.html" class="nav-link">Services</a></li>
+                    <li class="nav-item px-2"><a href="contact.html" class="nav-link ">Contact</a></li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown mr-3">
+                        <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user mr-2"></i>Welcome Fatemeh</a>
+                        <div class="dropdown-menu">
+                            <a href="profile.html" class="dropdown-item"><i class="fa fa-user-circle-o"></i>Profile</a>
+                            <a href="contact.html" class="dropdown-item"><i class="fa fa-envelope-square"></i>Contact</a>
+                            <a href="setting.html" class="dropdown-item"><i class="fa fa-gear"></i>Setting</a>
+                            <a href="login.html" class="dropdown-item"><i class="fa fa-sign-out"></i>Logout</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline" method="post">
+                    <input style="height:30px; width: 150px;" class="form-control mr-2" type="text" placeholder="search">
+                    <a href=""><i style="color: white; font-size: large;" class="fa fa-search"></i></a>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <header id="main-header" class="bg-warning py-2 text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <h3><i class="fa fa-list-alt mr-2"></i>Categories</h3>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Actions starts-->
+    <section id="actions" class="py-4 mb-4 bg-faded">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 offset-md-6">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search categories...">
+                <span class="input-group-btn">
+                  <button class="btn btn-warning">Search</button>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- Action ends -->
+
+    <section id="post">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Categoreis</h4>
+                        </div>
+                    </div>
+                    <table class="table table-striped">
+                        <thead class="thead-inverse">
+                           <tr>
+                               <th>#</th>
+                               <th>Title</th>
+                               <th>Category</th>
+                           </tr>
+                        </thead>
+                        <tr>
+                            <td scope="row">1</td>
+                            <td>FullSatck</td>
+                            <td>Book</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">2</td>
+                            <td>Bootsrap</td>
+                            <td>Book</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">3</td>
+                            <td>C++</td>
+                            <td>Book</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">4</td>
+                            <td>Java</td>
+                            <td>Book</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">5</td>
+                            <td>Phyton</td>
+                            <td>Book</td>
+                        </tr>
+                    </table>
+                    <nav class="ml-4">
+                        <ul class="pagination">
+                            <li class="page-item disabled"><a href="" class="page-link">Previous</a></li>
+                            <li class="page-item active"><a href="" class="page-link">1</a></li>
+                            <li class="page-item"><a href="" class="page-link">2</a></li>
+                            <li class="page-item"><a href="" class="page-link">3</a></li>
+                            <li class="page-item"><a href="" class="page-link">Next</a></li>
+                        </ul>
+                    </nav>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- footer start -->
+    <footer id="main-footer" class="bg-inverse text-white mt-5 pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="lead text-center">Copyright &copy; 2020 Fatemeh Rezwani</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.ckeditor.com/4.7.1/standard/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace('editor1');
+    </script>
+
+</body>
+</html>
